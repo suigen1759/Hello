@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush Confession</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin: 100px auto;
+            max-width: 600px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        #revealButton {
+            background-color: #ff4d4d; /* Love Red */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #revealButton:hover {
+            background-color: #ff1a1a; /* Darker Love Red */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confession of My Feelings</h1>
+        <p>Click the button below to reveal a message that may leave you wanting more:</p>
+        <div class="button-container">
+            <button id="revealButton">Uncover My Thoughts</button>
+        </div>
+        <div class="message" id="message">
+            <p>Dearest <span id="crushName">Your Crush's Name</span>,</p>
+            <p>Life is full of surprises, and one of the most delightful surprises for me has been getting to know you. Your <span id="messageContent">captivating presence</span> and <span id="messageContent2">charming personality</span> have me utterly enchanted.</p>
+            <p>There's a depth to my feelings that I can no longer hide. I blush at the mere thought of you, and my heart skips a beat when you're near. I yearn for moments with you that I can't put into words.</p>
+            <p>This is just the beginning of my confession, and there's so much more I want to share with you. Let's embark on this journey together and discover what lies ahead.</p>
+            <p>With anticipation,</p>
+            <p>Your Admirer</p>
+        </div>
+    </div>
+
+    <script>
+        const revealButton = document.getElementById('revealButton');
+        const message = document.getElementById('message');
+
+        revealButton.addEventListener('click', () => {
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+    
